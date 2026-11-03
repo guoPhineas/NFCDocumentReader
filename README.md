@@ -20,7 +20,7 @@ The package uses public NFC interfaces and publicly documented travel-document p
 
 - Swift 6.2 or later; the package uses Swift 5 language mode.
 - iOS 17 or later and a compatible physical iPhone for NFC sessions.
-- The demo currently targets iOS 27.2. Use a compatible Xcode/SDK.
+- The demo currently targets iOS 18.0. Use a compatible Xcode/SDK.
 - The protocol tests also run on macOS 14 or later. The Core NFC reader API is available only where CoreNFC can be imported.
 
 ## Package integration
