@@ -1,0 +1,442 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld bytes" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 字节"
+          }
+        }
+      }
+    },
+    "Application Data" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用数据"
+          }
+        }
+      }
+    },
+    "Application Data Coding" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用数据编码"
+          }
+        }
+      }
+    },
+    "Application ID" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Application ID"
+          }
+        }
+      }
+    },
+    "BAC Access" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BAC 访问"
+          }
+        }
+      }
+    },
+    "BAC authenticates session messages, but does not verify the issuing authority's signature. Results stay in memory and are not uploaded." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BAC 会对会话消息进行认证，但不会验证签发机构的签名。结果仅保留在内存中，不会上传。"
+          }
+        }
+      }
+    },
+    "BAC reads identity fields and additional personal details. PACE-only documents and extended MRZ document numbers are not supported yet." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BAC 可读取身份字段及其他个人详细信息。目前尚不支持仅支持 PACE 的证件以及扩展 MRZ 证件号码。"
+          }
+        }
+      }
+    },
+    "Cancel Scan" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消扫描"
+          }
+        }
+      }
+    },
+    "Chinese Identity Card" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "中国身份证"
+          }
+        }
+      }
+    },
+    "Connection Details" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "连接详情"
+          }
+        }
+      }
+    },
+    "Current Support" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当前支持"
+          }
+        }
+      }
+    },
+    "Date of Birth (YYMMDD)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "出生日期 (YYMMDD)"
+          }
+        }
+      }
+    },
+    "mgmt_number Bytes" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "mgmt_number 字节"
+          }
+        }
+      }
+    },
+    "mgmt_number Response" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "mgmt_number 响应"
+          }
+        }
+      }
+    },
+    "Document Code" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "证件代码"
+          }
+        }
+      }
+    },
+    "Document Number" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "证件号码"
+          }
+        }
+      }
+    },
+    "Enter the number and dates from the machine-readable zone to unlock chip access." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请输入机读区中的号码和日期以解锁芯片访问。"
+          }
+        }
+      }
+    },
+    "Expiry Date (YYMMDD)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "到期日期 (YYMMDD)"
+          }
+        }
+      }
+    },
+    "Historical Bytes" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "历史字节"
+          }
+        }
+      }
+    },
+    "Hold one document near the top of your iPhone until the scan finishes." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将一份证件靠近 iPhone 顶部并保持不动，直到扫描完成。"
+          }
+        }
+      }
+    },
+    "Identity Read from Chip" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "从芯片读取的身份信息"
+          }
+        }
+      }
+    },
+    "Issuing State" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "签发国家/地区"
+          }
+        }
+      }
+    },
+    "Machine-Readable Zone" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "机读区"
+          }
+        }
+      }
+    },
+    "MRZ Optional Data" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MRZ 可选数据"
+          }
+        }
+      }
+    },
+    "Name" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "姓名"
+          }
+        }
+      }
+    },
+    "Nationality" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "国籍"
+          }
+        }
+      }
+    },
+    "NFC Connection" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NFC 连接"
+          }
+        }
+      }
+    },
+    "No response payload" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无响应载荷"
+          }
+        }
+      }
+    },
+    "Proprietary" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "专有"
+          }
+        }
+      }
+    },
+    "Protocol" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "协议"
+          }
+        }
+      }
+    },
+    "Received" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已接收"
+          }
+        }
+      }
+    },
+    "Response Bytes" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "响应字节"
+          }
+        }
+      }
+    },
+    "Scan Document" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "扫描证件"
+          }
+        }
+      }
+    },
+    "Sex" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "性别"
+          }
+        }
+      }
+    },
+    "Showing the MRZ name. Additional personal details have not been read." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在显示 MRZ 姓名。尚未读取其他个人详细信息。"
+          }
+        }
+      }
+    },
+    "SN Bytes" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SN 字节"
+          }
+        }
+      }
+    },
+    "SN Response" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SN 响应"
+          }
+        }
+      }
+    },
+    "Status %@ · %lld response bytes" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Status %1$@ · %2$lld response bytes"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "状态 %1$@ · %2$lld 响应字节"
+          }
+        }
+      }
+    },
+    "Tag Identifier" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "标签标识符"
+          }
+        }
+      }
+    },
+    "The tag identifier describes the NFC tag; it is not a decoded identity number." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "标签标识符用于描述 NFC 标签；它不是解码后的身份号码。"
+          }
+        }
+      }
+    },
+    "Travel Documents" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "旅行证件"
+          }
+        }
+      }
+    },
+    "Travel Documents (Passport)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "旅行证件（护照）"
+          }
+        }
+      }
+    },
+    "Unspecified" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未指定"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.3"
+}

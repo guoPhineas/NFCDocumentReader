@@ -1,0 +1,486 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@. Keep the document still." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@。请保持证件不要移动。"
+          }
+        }
+      }
+    },
+    "Authenticate document" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "认证证件"
+          }
+        }
+      }
+    },
+    "Card Data Read" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "卡数据读取"
+          }
+        }
+      }
+    },
+    "Connecting" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在连接"
+          }
+        }
+      }
+    },
+    "Document authentication failed. Check the document number and dates." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "证件认证失败。请检查证件号码和日期。"
+          }
+        }
+      }
+    },
+    "Enter a document number of up to nine MRZ characters and dates in YYMMDD format." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请输入最多九个 MRZ 字符的证件号码，以及 YYMMDD 格式的日期。"
+          }
+        }
+      }
+    },
+    "Get document challenge" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "获取证件Challenge"
+          }
+        }
+      }
+    },
+    "Hold one resident identity card near the top of your iPhone." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将一张居民身份证靠近 iPhone 顶部。"
+          }
+        }
+      }
+    },
+    "Hold the travel document near the top of your iPhone. Keep it still until the full name is read." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将旅行证件靠近 iPhone 顶部。保持不动，直到读取完整姓名。"
+          }
+        }
+      }
+    },
+    "Identity data read" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "身份数据已读取"
+          }
+        }
+      }
+    },
+    "Keep the document still while connecting." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "连接期间请保持证件不动。"
+          }
+        }
+      }
+    },
+    "Keep the identity card still while its data is read." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "读取数据期间请保持身份证不动。"
+          }
+        }
+      }
+    },
+    "Looking for a Document" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在查找证件"
+          }
+        }
+      }
+    },
+    "NFC document scanning is unavailable. Use a compatible iPhone with NFC enabled." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NFC 证件扫描不可用。请使用已启用 NFC 的兼容 iPhone。"
+          }
+        }
+      }
+    },
+    "Present only one document, then move it away and try again." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请仅放置一份证件，然后将其移开并重试。"
+          }
+        }
+      }
+    },
+    "Protocol Not Supported Yet" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尚不支持此协议"
+          }
+        }
+      }
+    },
+    "Read %lld mgmt_number response bytes. SN and mgmt_number data are available for inspection." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已读取 %lld  mgmt_number 响应字节。SN 和 mgmt_number 数据可供检查。"
+          }
+        }
+      }
+    },
+    "Read mgmt_number response" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "读取 mgmt_number 响应"
+          }
+        }
+      }
+    },
+    "Read file header" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "读取文件头"
+          }
+        }
+      }
+    },
+    "Read full name" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "读取完整姓名"
+          }
+        }
+      }
+    },
+    "Read identity data" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "读取身份数据"
+          }
+        }
+      }
+    },
+    "Read SN response" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "读取 SN 响应"
+          }
+        }
+      }
+    },
+    "Read the full name and identity fields from the document chip." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "从证件芯片读取完整姓名和身份字段。"
+          }
+        }
+      }
+    },
+    "Reading Card Data" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在读取卡数据"
+          }
+        }
+      }
+    },
+    "Ready to Scan" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "准备扫描"
+          }
+        }
+      }
+    },
+    "Scan Cancelled" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "扫描已取消"
+          }
+        }
+      }
+    },
+    "Scan Failed" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "扫描失败"
+          }
+        }
+      }
+    },
+    "Scan the document NFC chip." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "扫描证件的 NFC 芯片。"
+          }
+        }
+      }
+    },
+    "Secure random generation failed." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安全随机数生成失败。"
+          }
+        }
+      }
+    },
+    "Select document application" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择证件应用"
+          }
+        }
+      }
+    },
+    "Select file 6002" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择文件 6002"
+          }
+        }
+      }
+    },
+    "Select master file" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择主文件"
+          }
+        }
+      }
+    },
+    "The command contains invalid hexadecimal data." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "该命令包含无效的十六进制数据。"
+          }
+        }
+      }
+    },
+    "The document cryptographic operation failed." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "证件加密操作失败。"
+          }
+        }
+      }
+    },
+    "The document data exceeds the parser limits." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "证件数据超出解析器限制。"
+          }
+        }
+      }
+    },
+    "The document data is incomplete or has an invalid length." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "证件数据不完整或长度无效。"
+          }
+        }
+      }
+    },
+    "The document name is not valid UTF-8." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "证件姓名不是有效的 UTF-8。"
+          }
+        }
+      }
+    },
+    "The document rejected the command (status %@)." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "证件拒绝了该命令（状态 %@）。"
+          }
+        }
+      }
+    },
+    "The document returned an incomplete or invalid protected response." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "证件返回了不完整或无效的受保护响应。"
+          }
+        }
+      }
+    },
+    "The document returned an unexpected response length." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "证件返回了意外的响应长度。"
+          }
+        }
+      }
+    },
+    "The NFC session could not be created." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法创建 NFC 会话。"
+          }
+        }
+      }
+    },
+    "The NFC session timed out. Move the document and scan again." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NFC 会话已超时。请移开证件并重新扫描。"
+          }
+        }
+      }
+    },
+    "The personal-details data is not valid plaintext." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "个人详细信息数据不是有效的明文。"
+          }
+        }
+      }
+    },
+    "The protected document response has invalid padding." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "受保护的证件响应填充无效。"
+          }
+        }
+      }
+    },
+    "The scan was cancelled." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "扫描已取消。"
+          }
+        }
+      }
+    },
+    "The secure messaging counter is exhausted. Scan again." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安全消息计数器已耗尽。请重新扫描。"
+          }
+        }
+      }
+    },
+    "This document's machine-readable format is not supported yet." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尚不支持此证件的机读格式。"
+          }
+        }
+      }
+    },
+    "This NFC tag does not support the document protocol." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此 NFC 标签不支持该证件协议。"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.3"
+}
