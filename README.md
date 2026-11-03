@@ -44,9 +44,6 @@ struct ResidentCardView: View {
             if let sn = reader.serialResponse {
                 Text(HexCodec.encode(sn))
             }
-            if let card = reader.cardData {
-                Text(HexCodec.encode(card.dn))
-            }
         }
     }
 }
