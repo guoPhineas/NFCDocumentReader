@@ -12,7 +12,7 @@ import Observation
 
 @MainActor
 @Observable
-public final class DocumentReader: NSObject, NFCTagReaderSessionDelegate {
+public final class DocumentReader: NSObject, @MainActor NFCTagReaderSessionDelegate {
     public enum Status: Equatable {
         case ready, scanning, connecting, checking, dataRead, unsupported, cancelled, failed
 
@@ -107,51 +107,48 @@ public final class DocumentReader: NSObject, NFCTagReaderSessionDelegate {
         guard let session, !isFinishing else { return }
         finish(session, status: .cancelled, message: String(localized: "The scan was cancelled.", bundle: .module))
     }
+    
+    public func tagReaderSessionDidBecomeActive(_ session: NFCTagReaderSession) {}
 
-    // The session and all tag completion handlers use DispatchQueue.main.
-    // assumeIsolated checks that contract at runtime instead of suppressing Sendable diagnostics.
-    nonisolated public func tagReaderSessionDidBecomeActive(_ session: NFCTagReaderSession) {}
-
-    nonisolated public func tagReaderSession(_ session: NFCTagReaderSession, didDetect tags: [NFCTag]) {
-        MainActor.assumeIsolated {
-            guard self.session === session, !isFinishing, status == .scanning else { return }
-            guard tags.count == 1, let tag = tags.first else {
-                session.alertMessage = String(localized: "Present only one document, then move it away and try again.", bundle: .module)
-                session.restartPolling()
-                return
-            }
-            status = .connecting
-            message = String(localized: "Keep the document still while connecting.", bundle: .module)
-            guard case let .iso7816(document) = tag else {
-                finish(session, status: .unsupported, message: String(localized: "This NFC tag does not support the document protocol.", bundle: .module))
-                return
-            }
-            documentTag = document
-            let sessionID = ObjectIdentifier(session)
-            session.connect(to: tag) { [weak self] error in
-                MainActor.assumeIsolated {
-                    guard let self, let session = self.session, ObjectIdentifier(session) == sessionID,
-                          !self.isFinishing, let document = self.documentTag else { return }
-                    if let error {
-                        self.fail(session, error: error)
-                        return
-                    }
-                    self.tagDetails = ISO7816TagDetails(
-                        identifier: document.identifier,
-                        selectedApplication: document.initialSelectedAID,
-                        historicalBytes: document.historicalBytes,
-                        applicationData: document.applicationData,
-                        proprietaryApplicationDataCoding: document.proprietaryApplicationDataCoding
-                    )
-                    self.status = .checking
-                    if self.travelProtocol != nil {
-                        self.sendTravelStep(to: document, session: session)
-                    } else {
-                        self.sendNextStep(0, to: document, session: session)
-                    }
+    public func tagReaderSession(_ session: NFCTagReaderSession, didDetect tags: [NFCTag]) {
+        guard self.session === session, !isFinishing, status == .scanning else { return }
+        guard tags.count == 1, let tag = tags.first else {
+            session.alertMessage = String(localized: "Present only one document, then move it away and try again.", bundle: .module)
+            session.restartPolling()
+            return
+        }
+        status = .connecting
+        message = String(localized: "Keep the document still while connecting.", bundle: .module)
+        guard case let .iso7816(document) = tag else {
+            finish(session, status: .unsupported, message: String(localized: "This NFC tag does not support the document protocol.", bundle: .module))
+            return
+        }
+        documentTag = document
+        let sessionID = ObjectIdentifier(session)
+        session.connect(to: tag) { [weak self] error in
+            MainActor.assumeIsolated {
+                guard let self, let session = self.session, ObjectIdentifier(session) == sessionID,
+                      !self.isFinishing, let document = self.documentTag else { return }
+                if let error {
+                    self.fail(session, error: error)
+                    return
+                }
+                self.tagDetails = ISO7816TagDetails(
+                    identifier: document.identifier,
+                    selectedApplication: document.initialSelectedAID,
+                    historicalBytes: document.historicalBytes,
+                    applicationData: document.applicationData,
+                    proprietaryApplicationDataCoding: document.proprietaryApplicationDataCoding
+                )
+                self.status = .checking
+                if self.travelProtocol != nil {
+                    self.sendTravelStep(to: document, session: session)
+                } else {
+                    self.sendNextStep(0, to: document, session: session)
                 }
             }
         }
+    
     }
 
     private func sendNextStep(_ index: Int, to tag: NFCISO7816Tag, session: NFCTagReaderSession) {
@@ -257,32 +254,31 @@ public final class DocumentReader: NSObject, NFCTagReaderSessionDelegate {
         }
     }
 
-    nonisolated public func tagReaderSession(_ session: NFCTagReaderSession, didInvalidateWithError error: Error) {
-        MainActor.assumeIsolated {
-            guard self.session === session else { return }
-            self.session = nil
-            travelProtocol = nil
-            documentTag = nil
-            isScanning = false
-            // Explicit completion wins over the subsequent Core NFC invalidation callback.
-            guard !isFinishing else { return }
-            if let nfcError = error as? NFCReaderError {
-                switch nfcError.code {
-                case .readerSessionInvalidationErrorUserCanceled:
-                    status = .cancelled
-                    message = String(localized: "The scan was cancelled.", bundle: .module)
-                case .readerSessionInvalidationErrorSessionTimeout:
-                    status = .failed
-                    message = String(localized: "The NFC session timed out. Move the document and scan again.", bundle: .module)
-                default:
-                    status = .failed
-                    message = error.localizedDescription
-                }
-            } else {
+    public func tagReaderSession(_ session: NFCTagReaderSession, didInvalidateWithError error: Error) {
+        guard self.session === session else { return }
+        self.session = nil
+        travelProtocol = nil
+        documentTag = nil
+        isScanning = false
+        // Explicit completion wins over the subsequent Core NFC invalidation callback.
+        guard !isFinishing else { return }
+        if let nfcError = error as? NFCReaderError {
+            switch nfcError.code {
+            case .readerSessionInvalidationErrorUserCanceled:
+                status = .cancelled
+                message = String(localized: "The scan was cancelled.", bundle: .module)
+            case .readerSessionInvalidationErrorSessionTimeout:
+                status = .failed
+                message = String(localized: "The NFC session timed out. Move the document and scan again.", bundle: .module)
+            default:
                 status = .failed
                 message = error.localizedDescription
             }
+        } else {
+            status = .failed
+            message = error.localizedDescription
         }
+    
     }
 }
 
